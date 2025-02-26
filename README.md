@@ -1,53 +1,70 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Task Management App** built with **React**, **TypeScript**, and **Vite**. The app allows users to manage tasks across different columns (e.g., `pending`, `inProgress`, `completed`) and supports features like adding, deleting, and viewing tasks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Task Management**: Add, delete, and view tasks across multiple columns.
+- **Dark Mode**: Toggle between light and dark themes.
+- **Responsive Design**: Works seamlessly on different screen sizes.
+- **Type Safety**: Built with TypeScript for better developer experience and type safety.
+- **Modern Tooling**: Uses Vite for fast development and builds.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+Follow these steps to set up and run the project locally.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+- **Node.js**: Make sure you have Node.js installed (version 16 or higher).
+- **npm** or **yarn**: Ensure you have a package manager installed.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+### Installation
 
-// package installed used: headless ui for modal
-// material ui for tooltip
-```
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+
+   ```
+
+2. **Install dependencies**:
+   Using npm:
+
+## npm install
+
+Using yarn:
+
+## yarn install
+
+3. **Start the development server**:
+   Using npm:
+
+## npm run dev
+
+Using yarn:
+
+## yarn dev
+
+4. **Open the app**:
+
+The app will be running at http://localhost:5173. Open this URL in your browser to view the app.
+
+# Dependencies
+
+This project uses the following key dependencies:
+
+## React: A JavaScript library for building user interfaces.
+
+## TypeScript: Adds static typing to JavaScript.
+
+## Vite: A fast build tool for modern web development.
+
+## Headless UI: For accessible and unstyled UI components (e.g., modals).
+
+## Material UI: For pre-styled components (e.g., tooltips).
